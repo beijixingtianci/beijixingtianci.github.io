@@ -15,6 +15,7 @@ body{
 	margin-top: 40px;
 	padding: 30px 40px;
 	width: 920px;
+	overflow: auto;
 }
 
 #big_header{
@@ -30,6 +31,7 @@ body{
 
 header{
 	padding-bottom: 20px;
+	height: auto;
 }
 
 .outer-menu{
@@ -48,6 +50,11 @@ header{
 	float: left;
 	list-style: none;
 	padding: 0 40px;
+	color: black;
+}
+
+.outer-menu-item:hover{
+	color: red;
 }
 
 nav{
@@ -55,5 +62,69 @@ nav{
 	border-top: 1px solid #C9C9C9;
 	border-bottom: 1px solid #C9C9C9;
 	padding-top: 5px;
-	margin-bottom: 50px;
+}
+
+.article-date{
+	margin-bottom: 5px;
+	font-size: 15px;
+	font-style: italic;
+}
+
+article{
+	border-bottom: 1px solid #C9C9C9;
+	padding-bottom: 11px;
+	margin-top: 30px;
+}
+
+aside{
+	float: right;
+	width: 200px;
+	margin-top: 25px;
+}
+
+section{
+	width: 500px;
+	float: left;
+}
+
+footer{
+	clear: both;
+	padding-top: 30px;
+}
+
+.aside-list ul{
+	list-style: none;
+	margin-bottom: 20px;
+	color: yellow;
+}
+
+.aside-list h3{
+	color: blue;
+}
+
+.aside-list ul li a{
+	color: yellowgreen;
+	text-decoration: none;
+}
+
+.input-search:focus{
+	background-color: greenyellow;
+	outline: 0;
+}
+
+.input-search{
+	border: 1px solid #CCCCCC;
+	float: left;
+	border-radius: 30px 0 0 30px;
+	height: 20px;
+	display: block;
+}
+
+.input-search-submit{
+	border: 1px solid #CCCCCC;
+	float: left;
+	border-radius: 0 30px 30px 0;
+	line-height: 20px;
+	width: 40px;
+	display: block;
 }
