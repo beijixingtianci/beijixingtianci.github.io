@@ -1,0 +1,59 @@
+*{
+	font-family:Gothic,sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 960px;
+	background: #E6E6E6;
+	margin: 0 auto;
+}
+
+#page-wrapper{
+	background: white;
+	margin-top: 40px;
+	padding: 30px 40px;
+	width: 920px;
+}
+
+#big_header{
+	font-size: 30px;
+	padding-bottom: 5px;
+}
+
+#small_header{
+	font-size: 20px;
+	font-style: italic;
+	font-weight: normal;
+}
+
+header{
+	padding-bottom: 20px;
+}
+
+.outer-menu{
+	float: left;
+}
+
+.pull-left{
+	float: left;
+}
+
+.pull-right{
+	float: right;
+}
+
+.outer-menu-item{
+	float: left;
+	list-style: none;
+	padding: 0 40px;
+}
+
+nav{
+	height: 30px;
+	border-top: 1px solid #C9C9C9;
+	border-bottom: 1px solid #C9C9C9;
+	padding-top: 5px;
+	margin-bottom: 50px;
+}

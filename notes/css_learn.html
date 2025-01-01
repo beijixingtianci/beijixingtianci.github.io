@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>css随记</title>
+</head>
+<body>
+	<p>
+	CSS有外部，内部，内联三个方式进行修饰
+	</p>
+	<p>
+	外部是在&lthead&gt标签中添加一个&ltlink&gt标签，写入rel = stylesheet和href的值
+	</p>
+	<p>
+	内部是在原本html的&lthead&gt标签里面添加&ltstyle&gt标签后，在里面写代码
+	</p>
+	<p>
+	内联是直接在标签里面写修饰代码
+	</p>
+	<br>
+	<p>
+	选择者部分:选择者+{ }
+	</p>
+	<p>
+		1. *号表示选择全部
+		<br>
+		2. 标签也可以进行选择
+		<br>
+		3. id选择的话需要用#xxx{},只可选择一个
+		<br>
+		4. class选择的话需要用.xxx{}，可多选
+		<br>
+		5. 选择者可以被逗号分开罗列出来使用
+		<br>
+		6. 可通过tag中的属性选择，tag[attribute]{}
+		<br>
+		7.1 子选择器(&gt),子选择器只会选择直接属于父级的子元素
+		<br>
+		7.2 后代选择器（空格）,后代选择器会选择所有属于父元素的子元素
+		<br>
+		8. 同级选择器分为紧邻兄弟选择器 (+)和普通兄弟选择器 (~)，前者用于选择紧跟在某个元素之后的相邻兄弟元素，后者用于选择某个元素之后的所有兄弟元素（不限于直接相邻）。
+		<br>
+		9. 反应选择者，tag:hover{}是鼠标悬停反应，tag:active{}是鼠标点击反应
+		<br>
+		10. 链接选择者， a:link{}选择尚未访问过的链接。a:visited{}选择已经访问过的链接。
+		<br>
+		11. input:checked选择处于“选中”状态的输入元素。 input:focus选择当前获得焦点的元素。input::enabled选择可用状态的输入元素。input:disabled选择不可用状态的输入元素。
+		<br>
+		12. 结构选择器解释
+		<br>
+		<img src="../picture/6.png" alt="结构选择器解释">
+		<br><hr><br>
+	</p>
+
+	
+</body>
+</html>

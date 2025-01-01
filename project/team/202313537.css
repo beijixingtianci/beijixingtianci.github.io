@@ -1,0 +1,239 @@
+input:nth-of-type(1){display: none;}
+input:nth-of-type(1) ~ div:nth-of-type(1){display: none; background-color: #FFFFF0;}
+input:nth-of-type(1):checked ~ div:nth-of-type(1){display:block; }
+input:nth-of-type(1):checked~section.tab-title>label:nth-of-type(1){
+	background-color: orange;
+	color: black;
+}
+input:nth-of-type(2){display: none;}
+input:nth-of-type(2) ~ div:nth-of-type(2){display: none; background-color: #FFFFF0;}
+input:nth-of-type(2):checked ~ div:nth-of-type(2){display: block;}
+input:nth-of-type(2):checked ~ section.tab-title>label:nth-of-type(2){
+	background-color: orange;
+	color: black;
+}
+input:nth-of-type(3){display: none;}
+input:nth-of-type(3) ~ div:nth-of-type(3){display: none; background-color: #FFFFF0;}
+input:nth-of-type(3):checked ~ div:nth-of-type(3){display: block;}
+input:nth-of-type(3):checked ~ section.tab-title>label:nth-of-type(3){
+	background-color: orange;
+	color: black;
+}
+input:nth-of-type(4){display: none;}
+input:nth-of-type(4) ~ div:nth-of-type(4){display: none; background-color: #FFFFF0;}
+input:nth-of-type(4):checked ~ div:nth-of-type(4){display: block;}
+input:nth-of-type(4):checked ~ section.tab-title>label:nth-of-type(4){
+	background-color: orange;
+	color: black;
+}
+nav > section.tab-title{overflow: hidden;}
+section.tab-title > label{
+	display: block;
+	float: left;
+	width: 411.8px;
+	height: 70px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid red;
+	color: blue;
+	background-color: #00BFFF;
+	border: 0;
+	font-size: 30px;
+	line-height: 70px;
+}
+#header{
+	font-family: "Gowun Dodum", sans-serif;
+	font-style: italic;
+  	font-weight: bold;
+  	padding: 40px 50px;
+  	text-align: center;
+  	background-image: url('3.jpg');
+  	background-size: 1647px;
+  	font-size: 50px;
+ }
+li{
+ 	list-style: none;
+ 	display: block;
+ 	float: left;
+ 	padding: 5px 60px;	
+ 	font-size: 20px;
+ }
+ li:hover{
+ 	color: red;
+ }
+nav{
+	border-top: 1px solid #C9C9C9;
+	border-bottom: 1px solid #C9C9C9;
+	height: 60px;
+}
+#content{
+	font-family: "Gowun Batang", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+a:link{
+	text-decoration: none;
+}
+#section{
+	padding: 50px;
+	font-size: 30px;
+	border: 10px solid red;
+}
+section.tab-title{
+	overflow: hidden;
+}
+#myself{
+	padding: 5px 5px;
+	margin: 20px 0;
+	font-size: 30px;
+	height: 800px;
+	border: 10px solid red;
+	position: relative;
+}
+#photosIndrotuce{
+	display: block;
+	float: left;
+	width: 500px;
+	height: auto;
+	font-style: italic;
+	text-align: center;
+}
+#myselfText{
+	position: absolute;
+	top: 300px;
+	left: 600px;
+	width: 700px;
+	height: 600px;
+	font-size: 25px;
+	display: block;
+	float: right;
+}
+#friend{
+	padding: 5px 5px;
+	margin: 20px 0;
+	font-size: 30px;
+	height: 1500px;
+	border: 10px solid red;
+	position: relative;
+}
+#friendPhoto{
+	display: block;
+	float: left;
+	width: 500px;
+	height: auto;
+	font-style: italic;
+	text-align: center;
+}
+#friendText{
+	position: absolute;
+	top: 50px;
+	left: 600px;
+	display: block;
+	float: right;
+	width: 700px;
+	height: auto;
+	font-size: 25px;
+}
+#hangangIndrotuce{
+	padding: 5px 5px;
+	margin: 20px 0;
+	font-size: 30px;
+	height: 800px;
+	border: 10px solid red;
+	position: relative;
+}
+#hanggangPhoto{
+	display: block;
+	float: left;
+	width: 700px;
+	height: auto;
+	font-style: italic;
+	text-align: center;
+}
+#hangangText{
+	position: absolute;
+	top: 100px;
+	left: 800px;
+	width: 800px;
+	height: 600px;
+	font-size: 25px;
+	display: block;
+	float: right;
+}
+#hangangGuide{
+	padding: 5px 5px;
+	margin: 20px 0;
+	font-size: 30px;
+	height: 10200px;
+	border: 10px solid red;
+	position: relative;
+	text-align: center;
+}
+#list{
+	width: 400px;
+	height: 1500px;
+	margin: 10px 20px;
+}
+#prepareThings{
+	position: absolute;
+	left: 600px;
+	top: 100px;
+}
+#introduce1{
+	margin: 150px 20px 20px 20px;
+	width: auto;
+	height: auto;
+}
+#introduce2{
+	position: absolute;
+	margin: 10px 20px;
+	left: 600px;
+	width: auto;
+	height: auto;
+}
+#introduce3{
+	margin: 740px 20px 20px 20px;
+	width: auto;
+	height: auto;
+}
+#introduce4{
+	position: absolute;
+	margin: 10px 20px;
+	left: 600px;
+	width: auto;
+	height: auto;
+}
+#introduce5{
+	margin: 810px 20px 20px 20px;
+	width: auto;
+	height: auto;
+}
+#introduce6{
+	position: absolute;
+	margin: 10px 20px;
+	left: 600px;
+	width: auto;
+	height: auto;
+}
+#summary{
+	margin: 2760px 20px 20px 20px;
+	width: auto;
+	height: auto;
+	text-align: center;
+}
+#summary > img{
+	display: block;
+	margin: 0 auto;
+}
+#footer{
+	text-align: center;
+	padding: 20px 0;
+	font-weight: bolder;
+	font-size: 20px;
+	position: relative;
+}
+td{
+	
+}
+
+
