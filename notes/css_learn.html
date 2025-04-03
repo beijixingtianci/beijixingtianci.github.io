@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>css随记</title>
+	<style>
+		a{
+			text-decoration: none;
+		}
+	</style>
 </head>
 <body>
 	<p>
@@ -50,9 +54,20 @@
 		12. 结构选择器解释
 		<br>
 		<img src="../picture/6.png" alt="结构选择器解释">
+		<br>
+		nth-child(n) 是选择同一个父元素下的第 n 个子元素，无论类型。nth-of-type(n) 是选择同类型的第 n 个元素。
 		<br><hr><br>
 		13. 带冒号的选择器之前不能空格用
 		<br>
+		14. 儿子的position用了absolute的话，父母就得用position的relation,说明儿子是相对于父母的tag的位置而设定目标
+		<br>
+		15. 如果碰到使用float而出现塌陷等异常输出情况，可以在其(们)的父母中添加overfloat:auto或者hidden
+		<br>
+		16. z-index 的作用：z-index 决定了元素在 前后层叠顺序 的优先级：数值越大，元素越靠前。数值越小，元素越靠后。
+		<br>
+		17. maxlength 是用于限制 输入框中用户可以输入的 最大字符数 的属性。
+		<br>
+		18. 使用top, left等，要确保所在标签position 设置为 absolute 或 fixed
 	</p>
 
 	

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery随记</title>
+	<style>
+		a{
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<p><strong>PS: 蓝色字体点击即可访问详细内容，可能需要梯子</strong></p>
+	<br>
+	<p><strong>两个方式用jQuery:</strong></p>
+	<p>&nbsp&nbsp&nbsp&nbsp<a href="http://www.jquery.com" target="_blank">1.下载到电脑里用</a></p>
+	<p>&nbsp&nbsp&nbsp&nbsp2.在head里调用。&ltscript src=&quothttps://code.jquery.com/jquery-3.6.0.min.js&quot&gt&lt/script&gt</p>
+	<br>
+	<p><strong>基本形式:</strong></p>
+	<p>$(selector).action();</p>
+	<br>
+	<p><strong>处理事件:</strong></p>
+	<p>%(&quotdocument&quot).ready(function(){<br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp});</p>
+	<br>
+	<p><strong>函数:&nbsp<a href="https://www.w3schools.com/jquery/jquery_ref_events.asp" target="_blank">更多内容访问</a></strong></p>
+	<p>&nbsp&nbsp&nbsp&nbspfocus();作用：使某个元素获得焦点。</p>
+	<p>&nbsp&nbsp&nbsp&nbspblur();作用：移除某个元素的焦点。</p>
+	<p>&nbsp&nbsp&nbsp&nbsp<strong>trigger()</strong> 是 jQuery 提供的一个方法，用于程序化地触发某个事件。换句话说，它可以模拟用户触发的事件（比如鼠标点击、键盘按键等），并执行绑定到该事件的回调函数。<br><strong>$(selector).trigger(eventType);</strong>&nbsp&nbspselector：要触发事件的元素选择器。eventType：要触发的事件类型，例如 "click", "mouseover", "keydown"。</p>
+	<p>&nbsp&nbsp&nbsp&nbsp<strong>attr()</strong> 是 jQuery 中用于获取或设置 HTML 元素属性的函数。<br>$(selector).attr(attributeName);// 获取属性值<br>$(selector).attr(attributeName, value);// 设置属性值<br>
+$(selector).attr({<br>
+    attributeName1: value1,<br>
+    attributeName2: value2<br>
+});// 设置多个属性</p>
+	<p>&nbsp&nbsp&nbsp&nbsp<strong>on()</strong> 是 jQuery 中用于绑定事件监听器的函数。它可以动态地为元素绑定事件，并且支持事件委托，是 jQuery 中处理事件的核心方法之一。<br><strong>$(selector).on(event, childSelector, data, function);</strong><br>event：要绑定的事件类型，例如 "click"、"mouseover" 等。支持多个事件类型，用空格分隔，例如 "click mouseover"。<br>
+childSelector（可选）：用于事件委托，指定子元素选择器。只有匹配这个选择器的子元素会触发事件。<br>
+data（可选）：传递给事件处理函数的额外数据。<br>
+function：事件触发时执行的回调函数。</p>
+	<p>&nbsp&nbsp&nbsp&nbsp<strong>.val()</strong> 是一个方法，用于获取或设置表单元素的值（value）。</p>
+	<p>&nbsp&nbsp&nbsp&nbsp<strong>.each()</strong> 方法指定为每个匹配的元素运行一个函数。</p>
+	<p>&nbsp&nbsp&nbsp&nbsp<strong>.next()</strong> 用来获取当前元素的下一个同级兄弟元素（即在 DOM 树中紧跟在当前元素之后的兄弟节点）。</p>
+	<p>&nbsp&nbsp&nbsp&nbsp<strong>.eq()</strong>用于选择当前选择器匹配元素集合中的某一个特定索引的元素。</p>
+	<p>&nbsp&nbsp&nbsp&nbsp<strong>.appendTo();</strong>将选定的元素插入到目标元素的内容末尾。<br><strong>$(selector).appendTo(target);</strong><br>selector：表示要插入的内容。<br>target：表示目标元素，selector 会被添加到它的内部末尾。</p>
+	<p>&nbsp&nbsp&nbsp&nbsp<strong>.hover()</strong>在一个方法里同时处理鼠标进入和离开的逻辑。<br><strong>$(selector).hover(handlerIn, handlerOut);</strong><br>selector：目标元素的选择器。<br>handlerIn：当鼠标进入目标元素时执行的函数。<br>handlerOut：当鼠标移出目标元素时执行的函数。</p>
+</body>
+</html>
