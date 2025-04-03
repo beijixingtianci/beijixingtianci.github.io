@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load JSON from File</title>
+</head>
+<body>
+    <h4>학생 명단</h4>
+    <div id="student-list"></div>
+
+    <script>
+        // 使用 fetch API 加载 JSON 数据
+        fetch("data.txt")
+            .then(response => response.json()) // 将响应解析为 JSON 对象
+            .then(data => {
+                // 处理并显示数据
+                let html = "<ul>";
+                data.forEach(student => {
+                    html += `<li>${student.name} - ${student.department} - ${student.phone}</li>`;
+                });
+                html += "</ul>";
+                document.getElementById("student-list").innerHTML = html;
+            })
+            .catch(error => console.error("Error loading JSON:", error));
+    </script>
+</body>
+</html>

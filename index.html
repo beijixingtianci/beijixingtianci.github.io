@@ -2,32 +2,110 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>新创站点主页面</title>
+	<title>主页（北极星.天赐）</title>
+	<link rel="stylesheet" type="text/css" href="cssForIndex.css">
+	<script defer src="jsForIndex.js"></script>
 </head>
 <body>
-	<article>
-		<p>这是主界面，还在设计中</p>
+	<header>
+		<ul id="header-context-1">	
+			<a href="components/Others.html">
+				<li class="header-text-1">其他</li>
+			</a>
+			<a href="components/Contact.html">
+				<li class="header-text-1">联系</li>
+			</a>
+			<a href="components/Experience.html">
+				<li class="header-text-1">经验</li>
+			</a>
+			<a href="components/Project.html">
+				<li class="header-text-1">项目</li>
+			</a>
+			<a href="index.html">
+				<li class="header-text-1">主页</li>
+			</a>
+		</ul>
+		<ul	id="header-context-2">
+			<li class="header-text-2">欢迎访问我的个人网站:<a href="https://beijixingtianci.github.io/" target="_blank">https://beijixingtianci.github.io/</a></li>
+		</ul>
+	</header>
+	<hr>
+	<div id="small-header">
+		<div id="web-links">
+			<p>网页链接区</p>
+			<a href="components/ChineseStudentUnion.html"><p class="web-link-text">建国大学学人学者联谊会官网</p></a>
+			<a href="https://www.konkuk.ac.kr/konkuk/index.do;jsessionid=D52EE932098584F22240301272A4ADCF"><p class="web-link-text">建国大学官网</p></a>
+			<a href="https://www.konkuk.ac.kr/ciss/18313/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGY2lzcyUyRjE0ODYlMkZhcnRjbExpc3QuZG8lM0Y="><p class="web-link-text">国际处通知栏</p></a>
+		</div>
+	</div>
+	<div class ="content">
+		<div id="Hello">
+			<p class="hello1">Hi my new friends</p>
+			<br>
+			<p class="hello2">Hello</p>
+			<p class="hello2">I'm LIU XIN</p>
+			<p class="hello2">Welcome to my person website</p>
+		</div>
+		<!-- <article>
+			<p>这是主界面，还在设计中</p>
+			<br>
+			<p>笔记</p>
+			<a href="notes/html_learn.html" target="_blank">点我跳转html学习随记</a>
+			<br>
+			<a href="notes/css_learn.html" target="_blank">点我跳转css学习随记</a>
+		</article>
 		<br>
-		<p>笔记</p>
-		<a href="notes/html_learn.html" target="_blank">点我跳转html学习随记</a>
-		<br>
-		<a href="notes/css_learn.html" target="_blank">点我跳转css学习随记</a>
-	</article>
-	<br>
-	<article>
+		<article>
 		<p>实操制作网页</p>
 		<br>
 		<a href="project/example_project_cna.html" target="_blank">点我跳转中文版基本html网页</a>
 		<br>
 		<a href="project/example_project_kor.html" target="_blank">点我跳转韩语版基本html网页</a>
-	</article>
-	<br>
-	<article>
-		<p>团队项目1（汉江步行记）</p>
-		<a href="project/team/202313537.html" target="_blank">点我跳转团队项目1作品</a>
+		</article>
 		<br>
-		<p>团队项目2（足球小游戏，暂时只支持PC版，没有中文）</p>
-		<a href="project/team2/myhtml.html" target="_blank">点我跳转团队项目2作品</a>
-	</article>
+		<article>
+			<p>团队项目1（汉江步行记）</p>
+			<a href="project/team/202313537.html" target="_blank">点我跳转团队项目1作品</a>
+			<br>
+			<p>团队项目2（足球小游戏，暂时只支持PC版，没有中文）</p>
+			<a href="project/team2/myhtml.html" target="_blank">点我跳转团队项目2作品</a>
+		</article> -->
+	</div>
+	<div id="main-aside">
+		<div id="aside-picture">
+			<img src="Main_img2.jpg" alt="aside-picture">
+		</div>
+		<p>北极星.天赐</p>
+		<br>
+		<p class="border-dotted">其实,我的希望是世界和平</p>
+		<div id="icons">
+			<a href="#" class="icon wechat">
+				<img src="weixin.png" alt="weixin">
+			</a>
+			<a href="#" class="icon"><img src="qq.png" alt="qq"></a>
+			<a href="#" class="icon"><img src="github-mark.png" alt="github"></a>
+			<a href="#" class="icon"><img src="email.png" alt="email"></a>
+		</div>
+		<table id="information-table">
+			<tr>
+				<td>就读院校</td>
+				<td>建国大学</td>
+			</tr>
+			<tr>
+				<td>年级</td>
+				<td>大三上</td>
+			</tr>
+			<tr>
+				<td>所在城市</td>
+				<td>首尔</td>
+			</tr>
+		</table>
+	</div>
+	<div id="wechat-qr"> 	<!-- 微信二维码输出 -->
+		<img src="Main_img3.png" alt="QRcode-for-wechat">
+		<p>扫码添加微信</p>
+		<p>或手动添加:A1494920167</p>
+		<button id="close-qr">关闭</button>
+	</div>
 </body>
 </html>

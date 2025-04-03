@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>js随记</title>
+		<style>
+			a{
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<p><strong>PS: 蓝色字体点击即可访问详细内容，可能需要梯子</strong></p>
+		<br>
+		<p>分三个方式插入js：</p>
+		<p>1. 内部： 在&lthead&gt或者&ltbody&gt里面直接插入&ltscript&gt</p>
+		<p>2. 外部： 在&lthead&gt里面加上 &ltscript&nbspsrc=&quotfilename&quot&gt&lt/script&gt</p>
+		<p>3. 内联： 直接在原tap里面添加</p>
+		<p>4. 基本类型没有属性和方法，但 JavaScript会自动用包装对象让你访问它们的属性和方法。包装对象是临时的，使用完方法后会自动销毁。手动创建包装对象可能会引发意外问题，不建议手动包装。</p>
+		<p>5. == 会自动进行类型转换，比较值的“内容是否相等”。=== 不进行类型转换，要求类型和值完全一致，更加严格和安全。</p>
+	 	<p>6. 对象比较的是引用，而不是内容。即使两个对象内容完全相同，它们是不同的对象，引用不同，所以被认为不相等。</p>
+	 	<br>
+	 	<p><strong>js函数说明:</strong></p>
+	 	<p>&nbsp&nbsp&nbsp&nbsp在 JavaScript 中，只调用函数名是对函数的引用,绑定的只是函数的名称，而不是立即执行函数。而函数名＋()就是调用函数的结果,如果函数没有返回值，啥都不是</p>
+	 	<p>&nbsp&nbsp&nbsp&nbspdocument.write(); 写入内容，放在函数里会让之前写的内容消失</p>
+	 	<p>&nbsp&nbsp&nbsp&nbspalert(message);弹出警告窗</p>
+	 	<p>&nbsp&nbsp&nbsp&nbspcomfirm(message);是一个内置方法，用于显示一个带有消息和 &quot确定&quot (OK) 和 &quot取消&quot (Cancel)按钮的弹窗。它通常用于向用户确认某个操作。</p>
+	 	<p>&nbsp&nbsp&nbsp&nbspprompt(message);用于显示一个带有输入框的对话框，用户可以通过输入框输入内容，返回值是用户输入的字符串。</p>
+	 	<p>&nbsp&nbsp&nbsp&nbspsetTimeout(function, delay);内置的 JavaScript 定时器函数function：要延迟执行的函数。delay：延迟时间，单位是毫秒</p>
+	 	<p>&nbsp&nbsp&nbsp&nbsp.innerHTML;可以用来 获取或设置 HTML 元素的内容</p>
+	 	<p>&nbsp&nbsp&nbsp&nbspwindow.onload;用于定义当整个页面（包括所有资源如图片、脚本、CSS 文件等）,加载完成后要执行的代码。当页面加载完成时，会触发 load 事件</p>
+	 	<p>&nbsp&nbsp&nbsp&nbspparseInt(待解析的字符串,（例如：10 表示十进制）); 是用于将字符串解析为整数的工具函数。</p>
+	 	<p>&nbsp&nbsp&nbsp&nbspdocument.createElement(tagName) 用于动态创建 HTML 元素的方法。</p>
+	 	<p>&nbsp&nbsp&nbsp&nbspelement.setAttribute(attributeName, value); 用于设置 HTML 元素属性的一个方法。</p>
+	 	<p>&nbsp&nbsp&nbsp&nbspparentNode.appendChild(childNode); 将新创建的元素添加到父元素中。</p>
+	 	<p>&nbsp&nbsp&nbsp&nbspparentNode.removeChild(childNode); 通过父节点调用，用来删除指定的子节点。</p>
+	 	<p>&nbsp&nbsp&nbsp&nbspsetInterval(function, milliseconds, param1, param2, ...); 按照指定的时间间隔（以毫秒为单位）重复执行某个函数或代码块。</p>
+	 	<p>&nbsp&nbsp&nbsp&nbspclearInterval(intervalID); intervalID：这是由 setInterval() 方法返回的 ID，表示要停止的定时器。</p>
+	 	<p>&nbsp&nbsp&nbsp&nbspMath.random();用于生成随机数的一个方法，它会返回一个 0（包含）到 1（不包含）之间的随机小数。</p>
+	 	<p>&nbsp&nbsp&nbsp&nbspMath.floor();向下取整，将小数变为整数。</p>
+	 	<p>&nbsp&nbsp&nbsp&nbspstring.charAt(index);用于获取字符串中某个位置字符的方法。</p>
+	 	<p>&nbsp&nbsp&nbsp&nbspstring.indexOf(searchValue);用于查找字符串中某个字符或子字符串的位置的方法,返回索引。</p>
+	 	<br>
+	 	<p><strong>画板:&nbsp&nbsp详情访问<a href="https://www.w3schools.com/tags/ref_canvas.asp" target="_blank">https://www.w3schools.com/tags/ref_canvas.asp</a></strong></p>
+	 	<p>&nbsp&nbsp&nbsp&nbsp先在body里面加&ltcanvas&gtid=&nbspwidth=&nbspheight=&nbsp&lt/canvas&gt</p>
+	 	<p>&nbsp&nbsp&nbsp&nbsp通过js,xxx = document.getElementById(&quotid&quot).getContext(&quot2d&quot); 来创建画板</p>
+	 	<p><a href="https://www.w3schools.com/tags/canvas_arc.asp">&nbsp&nbsp&nbsp&nbsp画xxx.arc(x, y, r, sAngle, eAngle, counterclockwise)</a></p>
+	</body>
+</html>
