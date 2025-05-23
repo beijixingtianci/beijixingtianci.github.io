@@ -115,7 +115,7 @@ nav {
 
 /* 英雄区域 */
 .hero {
-    background: url('hero-bg.jpg') center/cover no-repeat;
+    background: url('chineseStudentUnionPhotos/logo.jpg') center/cover no-repeat;
     height: 500px;
     display: flex;
     align-items: center;
@@ -169,12 +169,18 @@ nav {
 
 .about-image {
     flex: 1;
+    max-width: 300px;
 }
 
 .about-image img {
-    width: 100%;
+    width: 100%; /* 改成80%，比父容器小 */
+    max-width: 300px; /* 限制最大宽度 */
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-image p{
+    text-align: center;
 }
 
 /* 活动部分 */
