@@ -1,6 +1,17 @@
+root {
+  --primary-color: #4F1C51;
+  --secondary-color: #5F8B4C;
+  --accent-color: #07C160;
+  --light-bg: #F4F4F9;
+  --dark-text: #210F37;
+  --light-text: #f8f9fa;
+}
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 li{
@@ -209,3 +220,116 @@ header{
     border-radius: 5px;
     cursor: pointer;
 }
+
+/*手机*/
+
+/* 手机端样式 (最大宽度767px) */
+@media (max-width: 767px) {
+  /* 调整导航栏 */
+  header {
+    height: auto;
+    padding: 10px 0;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #header-context-1 {
+    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .header-text-1 {
+    float: none;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  
+  #header-context-2 {
+    margin-left: 0;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .header-text-2 {
+    float: none;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  /* 调整主要内容区 */
+  .content {
+    padding-left: 20px;
+    height: auto;
+  }
+  
+  #Hello {
+    padding-left: 20px;
+    padding-top: 50px;
+  }
+  
+  .hello1 {
+    font-size: 16px;
+  }
+  
+  .hello2 {
+    font-size: 24px;
+  }
+  
+  /* 调整侧边栏 */
+  #main-aside {
+    position: static;
+    width: 90%;
+    margin: 20px auto;
+    height: auto;
+    padding: 15px;
+  }
+  
+  /* 调整网页链接区 */
+  #small-header {
+    text-align: center;
+  }
+  
+  #web-links {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+  }
+  
+  .web-link-text {
+    margin: 5px 0;
+  }
+  
+  /* 调整微信二维码弹窗 */
+  #wechat-qr img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+/* 平板设备 (宽度768px到991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* 保持电脑版样式但微调 */
+  #header-context-1 {
+    margin-right: 100px;
+  }
+  
+  .header-text-1 {
+    padding: 20px 30px;
+  }
+  
+  #header-context-2 {
+    margin-left: 50px;
+  }
+  
+  .content {
+    padding-left: 300px;
+  }
+  
+  #main-aside {
+    left: 30px;
+  }
+}
+
+/* 保持您原有的桌面样式不变 */
