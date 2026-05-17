@@ -28,3 +28,14 @@
 git clone https://github.com/beijixingtianci/beijixingtianci.github.io.git
 
 # 安装依赖（本仓库仅包含打包后的 dist 内容，如需源码请联系我）
+```
+
+## 项目架构
+
+```
+Vue 前端 (GitHub Pages)
+    ↓ 调用 API
+Render 后端 (Node.js + Express)
+    ↓ 连接数据库
+Supabase PostgreSQL
+```
